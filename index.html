@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="styles.css" rel="stylesheet">
+	<title>Survey Form</title>
+</head>
+<body>
+	<h1 id="title">Enrollment Form</h1><hr>
+	<p id="description">&lt; This is a short enrollment form! /&gt;</p>
+	<form id="survey-form">
+		<label for="name" id="name-label">Name: </label>
+		<input type="text" id="name" placeholder="Sherlock Holmes" required><br><br>
+		
+		<label for="email" id="email-label">Email: </label>
+		<input type="email" id="email" placeholder="abc@example.com" required><br><br>
+		
+		<label for="number" id="number-label">Age: </label>
+		<input type="number" id="number" min="18" max="67" placeholder="21" required><br><br>
+
+		<label>Course: </label>
+		<input type="checkbox" id="course1" name="ICP" value="ICP">
+		<label for="course1">ICP</label>
+		<input type="checkbox" id="course2" name="GUI" value="GUI">
+		<label for="course2">GUI</label>
+		<input type="checkbox" id="course3" name="Python" value="Python">
+		<label for="course3">Python</label>
+		<input type="checkbox" id="course4" name="Other" value="Other">
+		<label for="course4">Other</label><br><br>
+
+		<label for="Timing">Timing: </label>
+        <select name="Timing" id="dropdown">
+		  <option value="select">Select</option>
+		  <option value="Morning">Morning</option>
+		  <option value="Noon">Noon</option>
+		  <option value="Evening">Evening</option>
+		</select><br><br>
+
+		<label>Gender:</label>
+		<input type="radio" name="Gender" value="Male">
+		<label>Male</label>
+		<input type="radio" name="Gender" value="Female">
+		<label>Female</label><br><br>
+
+		<label>Additional Comments: </label><br>
+        <textarea name="comments" id="comments" cols="30" rows="5" placeholder="Enter your comment here"></textarea><br><br><hr>
+
+		<button id="submit">Submit</button>
+	</form>
+</body>
+</html>
